@@ -16,7 +16,7 @@
             console.log( '.qa-theatre-mode-button: ' + button );
 
             if(!button) return;
-            
+
             var event = new MouseEvent('click', {'bubbles': true});
             button.dispatchEvent(event);
         }, 4000);
@@ -27,11 +27,11 @@
             // Hide whispers button
             div = document.getElementsByClassName('whispers--theatre-mode')[0];
             console.log('.whispers--theatre-mode: ' + div);
-            div.style.display = 'none';
+            if(div) div.style.display = 'none';
             // Expand player to fill space
             div = document.getElementsByClassName('video-player--logged-in')[0];
             console.log('.video-player--logged-in: ' + div);
-            div.classList.remove('video-player--logged-in');
+            if(div) div.classList.remove('video-player--logged-in');
         }, 6000);
     });
 })();
