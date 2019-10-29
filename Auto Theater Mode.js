@@ -23,8 +23,7 @@
                     // Expand player to fill space bottom
                     div = document.getElementsByClassName('highwind-video-player__container--theatre highwind-video-player__container--theatre-whispers')[0];
                     console.log('highwind-video-player__container--theatre-whispers: ' + div);
-                    if(div)
-                    { 
+                    if(div) { 
                         div.classList.remove('highwind-video-player__container--theatre-whispers');
                         div.classList.add('tw-bottom-0');
                     }
