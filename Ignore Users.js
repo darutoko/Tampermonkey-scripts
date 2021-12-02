@@ -12,7 +12,7 @@
 		'use strict';
 		window.addEventListener('load', function() {
 			var users = ['https://glav.su/members/16811/', 'https://glav.su/members/1482/', 'https://glav.su/members/25900/', 'https://glav.su/members/9955/', 'https://glav.su/members/29612/',
-			'https://glav.su/members/8634/', 'https://glav.su/members/2633/', 'https://glav.su/members/35969/', 'https://glav.su/members/25900/', 'https://glav.su/members/11505/'];
+			'https://glav.su/members/8634/', 'https://glav.su/members/2633/', 'https://glav.su/members/35969/', 'https://glav.su/members/25900/', 'https://glav.su/members/11505/', 'https://glav.su/members/146/'];
 			
 			document.querySelectorAll('.a-mp-m').forEach(message => {
 				// Skip if user is not on the list
