@@ -26,17 +26,18 @@
 				// console.log('.js-ml-m-v-nb: ' + !!button);
 				// if (button) button.dispatchEvent(event);
 			});
-			// Hide junk at the bottom of the page
-			let div = this.document.querySelector(".bl-f.c-m-t-1rem");
-			if(div) div.setAttribute('style', 'display: none;');
-			div = this.document.querySelector(".bl-ptrs");
+			// Hide junk at the top and bottom of the page
+			let div = this.document.querySelector(".bl-ptrs");
 			if(div) div.setAttribute('style', 'display: none;');
 			div = this.document.querySelector(".bl-a.c-m-b-1rem.c-m-t-1rem");
 			if(div) div.setAttribute('style', 'display: none;');
 			div = this.document.querySelector(".l-f");
 			if(div) div.setAttribute('style', 'display: none;');
+			document.querySelectorAll(".bl-f.c-m-t-1rem").forEach(div => {
+				div.setAttribute('style', 'display: none;');
+			});
 			document.querySelectorAll(".bl-mp-bl:not(.c-p-1rem)").forEach(div => {
 				div.setAttribute('style', 'display: none;');
-		});
+			});
 		});
 })();
